@@ -3,20 +3,18 @@
 
 import numpy as np
 
-singleArray = np.array([])
+singleArray = np.array([1,3,5])
+print("Single Array:\n", singleArray)
 
-multiArray = np.array([], [])
+multiArray = np.array([ [4,8,1], [1,5,2] ])
+print("multiArray:\n", multiArray)
 
-allOneArray = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+allOneArray = np.array([1, 1, 1, 1, 1, 1])
+print("Array of all 1s:\n", allOneArray)
 
-allZeroArray = np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+randArray = np.random.rand(3,4)
+print("Array of Randoms:\n", randArray)
 
-randArray = np.array([])
-
-for x in range(0, 1000):
-    temp = np.random.randint(100000)
-    print(temp)
-    randArray = np.append(randArray, temp)
-
-value = [1, 1, 1, 1, 1, 1, 1, 1, 1]
+value = [1,5,3,6,9]
 diagMatrix = np.diag(value)
+print("Diagoanl Matrix:\n", diagMatrix)
